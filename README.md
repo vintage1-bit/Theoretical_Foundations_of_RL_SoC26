@@ -31,74 +31,53 @@ Resources
 Deliverables
 - 1-2 page write-up defining RL, return, policy, value function, and exploration vs exploitation
 
-Week 2: Algorithm Deep Dive + Exploration (Lectures 1-2)
---------------------------------------------------------
+Week 2: Algorithm Overview + MDPs (Lectures 1-2)
+------------------------------------------------
 Topics
 - Q-learning and Monte Carlo methods
 - Proximal Policy Optimization (PPO)
 - Deep Deterministic Policy Gradient (DDPG)
 - Soft Actor-Critic (SAC)
 - Deep Q-Network (optional)
-
-Resources
-- OpenAI Spinning Up (for PPO, DDPG, SAC): https://spinningup.openai.com/en/latest/index.html
-- OpenAI Spinning Up RL Intro (complete all three parts): https://spinningup.openai.com/en/latest/spinningup/rl_intro.html
-- GeeksforGeeks (Q-learning, Monte Carlo): https://www.geeksforgeeks.org/q-learning-in-python/ and https://www.geeksforgeeks.org/monte-carlo-methods-in-reinforcement-learning/
-- Exploration vs exploitation:
-	- David Silver Lecture 2 (MDPs) from the playlist above
-	- Sutton and Barto (2020), Ch. 2-3
-
-Deliverables
-- A brief report on Q-learning, Monte Carlo, PPO, DDPG, SAC (and optional DQN)
-- A glossary that explains all new vocabulary you used in the report
-
-Important Notes
-- Set up dependencies for Spinning Up (needed for Week 3) and start exploring the library
-- Start working with OpenAI Gym (or Gymnasium) environments
-
-Week 3: Markov Decision Processes (Lecture 2)
----------------------------------------------
-Topics
 - MDPs: (S, A, P, R, gamma), Markov property, policies
 - State-value and action-value functions
 
 Resources
-- David Silver Lecture 2: playlist link above
-- Sutton and Barto (2020), Ch. 3
+- David Silver Lectures 1-2: playlist link above
+- Sutton and Barto (2020), Ch. 2-3
+- OpenAI Spinning Up (for PPO, DDPG, SAC): https://spinningup.openai.com/en/latest/index.html
+- OpenAI Spinning Up RL Intro (complete all three parts): https://spinningup.openai.com/en/latest/spinningup/rl_intro.html
+- GeeksforGeeks (Q-learning, Monte Carlo): https://www.geeksforgeeks.org/q-learning-in-python/ and https://www.geeksforgeeks.org/monte-carlo-methods-in-reinforcement-learning/
 - CS747 (IITB) Section 2 (MDPs): https://www.cse.iitb.ac.in/~shivaram/teaching/old/cs747-s2025/index.html
 
 Deliverables
+- A brief report on Q-learning, Monte Carlo, PPO, DDPG, SAC (and optional DQN)
+- A glossary that explains all new vocabulary you used in the report
 - Short derivation of Bellman expectation equations for V and Q
 
-Week 4: Dynamic Programming (Lecture 3)
----------------------------------------
+Important Notes
+- Set up dependencies for Spinning Up (needed for Week 5 onward) and start exploring the library
+- Start working with OpenAI Gym (or Gymnasium) environments
+
+Week 3: Dynamic Programming + Model-Free Prediction (Lectures 3-4)
+------------------------------------------------------------------
 Topics
 - Bellman expectation and optimality equations
 - Policy evaluation, policy iteration, value iteration
 - Convergence intuition
-
-Resources
-- David Silver Lecture 3: playlist link above
-- Sutton and Barto (2020), Ch. 4
-
-Deliverables
-- Pseudocode for policy evaluation, policy iteration, and value iteration
-
-Week 5: Model-Free Prediction (Lecture 4)
------------------------------------------
-Topics
 - Monte Carlo vs TD learning
 - TD(0), TD(lambda)
 - Bias-variance tradeoff
 
 Resources
-- David Silver Lecture 4: playlist link above
-- Sutton and Barto (2020), Ch. 5-6
+- David Silver Lectures 3-4: playlist link above
+- Sutton and Barto (2020), Ch. 4-6
 
 Deliverables
+- Pseudocode for policy evaluation, policy iteration, and value iteration
 - Compare MC and TD on a small toy MDP (math only)
 
-Week 6: Model-Free Control (Lecture 5)
+Week 4: Model-Free Control (Lecture 5)
 --------------------------------------
 Topics
 - SARSA vs Q-learning
@@ -112,7 +91,7 @@ Resources
 Deliverables
 - Derivation and comparison of SARSA and Q-learning updates
 
-Week 7: Value Function Approximation (Lecture 6)
+Week 5: Value Function Approximation (Lecture 6)
 ------------------------------------------------
 Topics
 - Function approximation in RL
@@ -127,7 +106,7 @@ Resources
 Deliverables
 - Write the DQN loss and explain why replay and target networks help
 
-Week 8: Policy Gradient Methods (Lecture 7)
+Week 6: Policy Gradient Methods (Lecture 7)
 -------------------------------------------
 Topics
 - Policy Gradient Theorem (full derivation)
@@ -142,8 +121,8 @@ Resources
 Deliverables
 - Derive REINFORCE with baseline and explain variance reduction
 
-Week 9: Integrating Learning, Planning, and Exploration (Lectures 8-9)
-----------------------------------------------------------------------
+Week 7: Planning, Exploration, and Advanced RL (Lectures 8-10)
+--------------------------------------------------------------
 Topics
 - Model-based RL
 - Dyna-Q framework
@@ -152,35 +131,26 @@ Topics
 - Upper Confidence Bound (UCB)
 - Regret minimization concepts
 - Exploration challenges in deep RL
-
-Resources
-- David Silver Lectures 8-9: playlist link above
-- Sutton and Barto (2020), Ch. 2 and Ch. 8
-- CS747 (IITB) Section 3 (RL): https://www.cse.iitb.ac.in/~shivaram/teaching/old/cs747-s2025/index.html
-
-Deliverables
-- Explain Dyna-Q and compare epsilon-greedy vs UCB
-
-Week 10: Advanced RL + Classic Problems (Lecture 10)
-----------------------------------------------------
-Topics
 - Limitations of classical RL
 - Scaling to complex environments
 - Actor-Critic methods, PPO, DDPG, SAC
 - Connecting classical RL to deep RL
 
 Resources
-- David Silver Lecture 10: playlist link above
+- David Silver Lectures 8-10: playlist link above
+- Sutton and Barto (2020), Ch. 2 and Ch. 8
+- CS747 (IITB) Section 3 (RL): https://www.cse.iitb.ac.in/~shivaram/teaching/old/cs747-s2025/index.html
 - Spinning Up (PPO, DDPG, SAC): https://spinningup.openai.com/en/latest/index.html
 - PPO paper: https://arxiv.org/abs/1707.06347
 - DDPG paper: https://arxiv.org/abs/1509.02971
 - SAC paper: https://arxiv.org/abs/1801.01290
 
 Deliverables
+- Explain Dyna-Q and compare epsilon-greedy vs UCB
 - Summarize strengths and weaknesses of PPO, DDPG, SAC in 1-2 pages
 
-Week 11: Final Project Part 1
------------------------------
+Week 8: Final Project Part 1
+----------------------------
 Focus
 - Choose 1-2 algorithms (e.g., DQN, PPO, SAC)
 - Implement from scratch
@@ -193,8 +163,8 @@ Resources
 Deliverables
 - Working baseline implementation and initial results
 
-Week 12: Final Project Part 2
------------------------------
+Week 9: Final Project Part 2
+----------------------------
 Focus
 - Run experiments and compare methods
 - Document results and insights
